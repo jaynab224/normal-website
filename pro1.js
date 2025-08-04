@@ -40,9 +40,9 @@ var fileName = "pdfData.jpg";
 
 if (fileName [0] == "#") {
   console.log("Store");
-} else if (fileName.endsWith(".pdf")) {
+} else if (fileName.includes(".pdf")) {
   console.log("Store");
-} else if (fileName.endsWith(".docx")) {
+} else if (fileName.includes(".docx")) {
   console.log("Store");
 } else {
   console.log("Delete");
@@ -55,7 +55,7 @@ var student= { name: "jhankar" , roll: 1014 ,department: "cse" };
 
 
 // Email generate
-var email = student.name + student.roll + "." + student.department + "@ph.ac.bd";
+var email = student.name + student.roll + '.'+ student.department + "@ph.ac.bd";
 
 console.log(email);
 
